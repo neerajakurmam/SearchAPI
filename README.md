@@ -1,6 +1,5 @@
 #Swagger URL To Test
-http://localhost:8078/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
-
+http://localhost:8078/searchapi/swagger-ui/index.html?configUrl=/searchapi/api-docs/swagger-config
 
 #Insert below documents
 

@@ -1,0 +1,35 @@
+server:
+  port: 8078
+
+spring: 
+ application:
+    name: SEARCH_API
+ mvc:
+    pathmatch:
+       matching-strategy: ANT_PATH_MATCHER
+       
+management:
+  endpoints:
+    web:
+      base-path: /searchapi/actuator
+      exposure:
+        include: info, health, loggers
+  endpoint:
+    loggers:
+      enabled: true
+      
+springdoc:
+  api-docs:
+    enabled: true
+    path: '/searchapi/api-docs'
+  swagger-ui:
+    path: '/searchapi/swagger'
+    tags-sorter: alpha
+    operations-sorter: alpha
+#  show-actuator: true
+logging:
+  level:
+    '[com.search.api]': INFO
+    #org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    #org.springframework.web.filter.CommonsRequestLoggingFilter: INFO
+    #org.hibernate.SQL: DEBUG
